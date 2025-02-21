@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+/* Container */
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+/* Left panel (Welcome / Info) */
+.panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.panel h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.panel p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.panel .btn {
+    margin-top: 15px;
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
+    background: white;
+    color: #6a11cb;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.panel .btn:hover {
+    background: transparent;
+    color: white;
+}
+
+/* Form Container */
+.form-container {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container button:hover {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+    background-color: #5a67d8;
+}
+.form-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #090909;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #5a67d8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .panel {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 20px;
+    }
+}
