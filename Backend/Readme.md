@@ -32,11 +32,7 @@ This is the backend for the **Order Management System** built using **Spring Boo
 
 2. **Configure Database** (In `application.properties` or `application.yml`)
    ```properties
-   spring.datasource.url=jdbc:mysql://localhost:3306/order_db
-   spring.datasource.username=root
-   spring.datasource.password=yourpassword
-   spring.jpa.hibernate.ddl-auto=update
-   ```
+   
 
 3. **Build and Run**
    ```sh
